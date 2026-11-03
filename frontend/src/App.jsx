@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, NavLink, Route, Routes, useLocation } from 'react-router-dom'
 import { dashboardApi, employeesApi, projectsApi, tasksApi } from './api/client'
 
-const menus = [{to:'/',icon:'grid-1x2',label:'Overview'},{to:'/employees',icon:'people',label:'Employees'},{to:'/projects',icon:'kanban',label:'Projects'},{to:'/tasks',icon:'check2-square',label:'Tasks'}]
+const menus = [{to:'/',icon:'grid-1x2',label:'Overview'},{to:'/employees',icon:'people',label:'Employees'},{to:'/projects',icon:'kanban',label:'Projects'},{to:'/tasks',icon:'check2-square',label:'Taskssss'}]
 const titleMap = {'/':'Overview','/employees':'Employees','/projects':'Projects','/tasks':'Tasks'}
 const fmt = d => d ? new Date(`${d}T00:00:00`).toLocaleDateString('en', {month:'short',day:'numeric',year:'numeric'}) : '—'
 const initials = s => (s||'?').split(' ').map(x=>x[0]).slice(0,2).join('').toUpperCase()
